@@ -1,3 +1,18 @@
+# Beverage Hub 🍺
+
+[![Testes Unitários](https://github.com/jansenutfpr/beverage-hub/actions/workflows/tests.yml/badge.svg)](https://github.com/jansenutfpr/beverage-hub/actions/workflows/tests.yml)
+[![Cobertura](https://codecov.io/gh/jansenutfpr/beverage-hub/branch/main/graph/badge.svg)](https://codecov.io/gh/jansenutfpr/beverage-hub)
+
+Sistema de gerenciamento de bebidas com testes automatizados.
+
+## 🧪 Testes
+
+- **Framework:** Jest
+- **Cobertura:** > 70%
+- **Execução:** Automatizada no CI/CD
+
+### Executar localmente
+
 [React Native]: https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
 [JavaScript]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
 [CSS3]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white

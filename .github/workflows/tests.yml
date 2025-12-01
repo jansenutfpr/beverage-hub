@@ -1,0 +1,53 @@
+name: Testes Unitários
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  test:
+    name: Executar Testes
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+    - name: 📥 Checkout do código
+      uses: actions/checkout@v4
+
+    - name: 🔧 Configurar Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: 📦 Instalar dependências
+      run: npm ci
+
+    - name: 🧪 Executar testes unitários
+      run: npm test
+
+    - name: 📊 Gerar relatório de cobertura
+      run: npm run test:coverage
+
+    - name: 📈 Upload do relatório de cobertura
+      uses: codecov/codecov-action@v3
+      if: matrix.node-version == '20.x'
+      with:
+        files: ./coverage/lcov.info
+        flags: unittests
+        name: beverage-hub-coverage
+
+    - name: ✅ Verificar cobertura mínima (70%)
+      run: |
+        COVERAGE=$(cat coverage/coverage-summary.json | jq '.total.lines.pct')
+        echo "📊 Cobertura de código: $COVERAGE%"
+        if (( $(echo "$COVERAGE < 70" | bc -l) )); then
+          echo "❌ Cobertura abaixo de 70%!"
+          exit 1
+        fi
+        echo "✅ Cobertura adequada!"
