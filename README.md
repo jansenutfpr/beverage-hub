@@ -35,9 +35,9 @@ Sistema de gerenciamento de bebidas com testes automatizados.
 </p>
 
 <p align="center">
-    <img src="https://github.com/ppedrohcmoda/beverage-hub/blob/main/public/Macbook-home1.png?raw=true" width="450px">
-    <img src="https://github.com/ppedrohcmoda/beverage-hub/blob/main/public/Macbook-drinks.png?raw=true" width="450px"><br><br>
-    <img src="https://github.com/ppedrohcmoda/beverage-hub/blob/main/public/home-mobile.png?raw=true" width="200px">
+    <img src="https://github.com/pedrohcmoda/beverage-hub/blob/main/public/Macbook-home1.png?raw=true" width="450px">
+    <img src="https://github.com/pedrohcmoda/beverage-hub/blob/main/public/Macbook-drinks.png?raw=true" width="450px"><br><br>
+    <img src="https://github.com/pedrohcmoda/beverage-hub/blob/main/public/home-mobile.png?raw=true" width="200px">
 </p>
 
 <h2 id="about">📌 About</h2>
@@ -77,7 +77,7 @@ Special thank you for all people that contributed for this project.
   <tr>
     <td align="center">
       <a href="https://github.com/pedrohcmoda">
-        <img src="https://avatars.githubusercontent.com/u/100807308?v=4" width="100px;" alt="Pedro Moda Profile Picture"/><br>
+        <img src="https://avatars.ggithubusercontent.com/u/100807308?v=4" width="100px;" alt="Pedro Moda Profile Picture"/><br>
         <sub>
           <b>Pedro Moda</b>
         </sub>
@@ -85,7 +85,7 @@ Special thank you for all people that contributed for this project.
     </td>
      <td align="center">
         <a href="https://github.com/Kio-Suzuki">
-          <img src="https://avatars.githubusercontent.com/u/116661015?v=4" width="100px;" alt="Akio Suzuki Profile Picture"/><br>
+          <img src="https://avatars.ggithubusercontent.com/u/116661015?v=4" width="100px;" alt="Akio Suzuki Profile Picture"/><br>
           <sub>
             <b>Akio Suzuki</b>
           </sub>
